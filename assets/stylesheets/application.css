@@ -1,4 +1,12 @@
-@charset "UTF-8";
+@font-face {
+  font-family: 'Brushsci';
+  src: url("../../_assets/fonts/BRUSHSCI.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'DymaxionScript';
+  src: url("../../_assets/fonts/DymaxionScript.ttf") format("truetype");
+  src: url("../../_assets/fonts/DymaxionScript.woff") format("woff"); }
+
 /**
  * Reset some basic elements
  */
@@ -16,21 +24,24 @@ a:visited {
   color: #404040;
   text-decoration: none; }
 
-@font-face {
-  font-family: 'Brushsci';
-  src: url("../fonts/BRUSHSCI.ttf") format("truetype"); }
+.centered-content {
+  left: 50%;
+  position: absolute; }
 
 .homepage__title {
   color: #ececec;
   font-family: "Brushsci";
   font-family: 'Open Sans', sans-serif;
+  font-family: 'DymaxionScript';
   font-size: 45px;
   text-align: center;
   letter-spacing: 3px;
   font-style: italic;
   text-transform: uppercase;
-  position: absolute;
-  top: -41px;
+  position: relative;
+  white-space: nowrap;
+  left: -50%;
+  top: -95px;
   height: 45px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,7 +54,8 @@ a:visited {
           justify-content: center;
   z-index: 2; }
   .homepage__title span {
-    color: #ff8900; }
+    color: #ff8900;
+    white-space: nowrap; }
 
 #homepage {
   -webkit-box-align: center;
@@ -213,6 +225,7 @@ nav {
   position: relative;
   width: 100%;
   top: 0;
+  left: 0;
   position: fixed;
   margin: 0 auto;
   border-bottom: 1px solid #ccc;
@@ -238,7 +251,7 @@ nav {
   height: 60px; }
   #homepage .icon:hover {
     background-image: url("../images/icons/settings-orange.svg"); }
-  #homepage .icon::after {
+  #homepage .icon p {
     color: white;
     top: 105%;
     font-size: 12.5px; }
@@ -281,9 +294,21 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .icon .centered-content {
+    top: 100%; }
+  .icon p {
+    left: -50%;
+    position: relative;
+    opacity: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    font-size: 10px;
+    font-family: "open sans";
+    text-transform: uppercase;
+    color: #5a6fb5; }
   .icon:hover {
     cursor: pointer; }
-    .icon:hover::after {
+    .icon:hover p {
       opacity: 1;
       -webkit-transition: all .3s;
       transition: all .3s; }
@@ -301,22 +326,14 @@ nav {
 
 .icon--contact {
   background-image: url("../images/icons/contact-orange.svg"); }
-  .icon--contact::after {
-    content: "contact"; }
 
 .icon--gallery {
   background-image: url("../images/icons/photo-orange.svg"); }
-  .icon--gallery::after {
-    content: "galerie"; }
 
 .icon--presentation {
   background-image: url("../images/icons/user-orange.svg"); }
-  .icon--presentation::after {
-    content: "présentation"; }
 
 .icon--home {
   background-image: url("../images/icons/logo-black.svg");
   background-size: 90%;
   border-color: #5a6fb5; }
-  .icon--home::after {
-    content: "accueil"; }

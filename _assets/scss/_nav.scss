@@ -24,6 +24,7 @@ nav {
   // height: 130px;
   width: 100%;
   top: 0;
+  left: 0;
   position: fixed;
   margin: 0 auto;
   border-bottom: 1px solid #ccc;
@@ -50,7 +51,7 @@ nav {
       background-image: url("../images/icons/settings-orange.svg");
     }
 
-    &::after {
+    p {
       color: white;
       top: 105%;
       font-size: 12.5px;
@@ -97,11 +98,26 @@ nav {
   align-items: center;
   display: flex;
 
+  .centered-content {
+    top: 100%;
+  }
+
+  p {
+    left: -50%;
+    position: relative;
+    opacity: 0;
+    transition: all .3s;
+    font-size: 10px;
+    font-family: "open sans";
+    text-transform: uppercase;
+    color: #5a6fb5;
+  }
+
   &:hover {
     cursor: pointer;
     // background-color: white;
 
-    &::after {
+    p {
       opacity: 1;
       transition: all .3s;
     }
@@ -122,34 +138,15 @@ nav {
 
 .icon--contact {
   background-image: url("../images/icons/contact-orange.svg");
-
-  &::after {
-    content: "contact";
-  }
 }
-
 .icon--gallery {
   background-image: url("../images/icons/photo-orange.svg");
-
-  &::after {
-    content: "galerie"
-  }
 }
-
 .icon--presentation {
   background-image: url("../images/icons/user-orange.svg");
-
-  &::after {
-    content: "présentation"
-  }
 }
-
 .icon--home {
   background-image: url("../images/icons/logo-black.svg");
   background-size: 90%;
   border-color: #5a6fb5;
-
-  &::after {
-    content: "accueil"
-  }
 }
