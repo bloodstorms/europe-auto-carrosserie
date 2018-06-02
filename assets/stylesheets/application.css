@@ -80,7 +80,7 @@ a:visited {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  #homepage .centered-content {
+  #homepage > .centered-content {
     top: 253px; }
 
 .homepage__text-intro {
