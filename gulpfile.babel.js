@@ -42,7 +42,7 @@ const paths = {
 }
 
 // Default
-gulp.task('default', ['js', 'sass', 'images', 'svg'], () => {
+gulp.task('default', ['js', 'sass', 'images', 'fonts', 'svg'], () => {
   browserSync.init({
     server: {
       baseDir: './_site'
@@ -86,6 +86,12 @@ gulp.task('images', () => {
   return gulp.src(globs.images)
     .pipe(imagemin())
     .pipe(gulp.dest(paths.images))
+});
+
+// Fonts
+gulp.task('fonts', () => {
+  return gulp.src(globs.fonts)
+    .pipe(gulp.dest(paths.fonts))
 });
 
 // SVG
