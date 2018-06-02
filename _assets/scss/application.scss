@@ -1,12 +1,17 @@
 @font-face {
   font-family: 'Brushsci';
-  src: url("../../_assets/fonts/BRUSHSCI.ttf") format('truetype');
+  src: url("../fonts/BRUSHSCI.ttf") format('truetype');
 }
-
 @font-face {
   font-family: 'DymaxionScript';
-  src: url("../../_assets/fonts/DymaxionScript.ttf") format('truetype');
-  src: url("../../_assets/fonts/DymaxionScript.woff") format('woff');
+  src: url("../fonts/DymaxionScript.ttf") format('truetype'),
+       url("../fonts/DymaxionScript.woff") format('woff');
+}
+@font-face {
+  font-family: 'blackjack';
+  src: url("../fonts/blackjack.ttf") format('truetype'),
+       url("../fonts/blackjack.woff") format('woff'),
+       url("../fonts/blackjack.eot?#iefix") format('eot');
 }
 
 /**
