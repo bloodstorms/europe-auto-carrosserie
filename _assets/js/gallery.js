@@ -25,7 +25,7 @@ var categories = [
 
 for(var loopIndex = 0; loopIndex < categories.length; loopIndex++) {
   for(var imgIndex = 1; imgIndex < categories[loopIndex].catNumb; imgIndex++) {
-    $('.gallery__wrapper')[0].innerHTML += '<div class="gallery__item scale-anm all ' + categories[loopIndex].catName + '"><img src="/assets/images/gallery/' + categories[loopIndex].catName + '/' + imgIndex + '.jpg" alt="" /></div>'
+    $('.gallery__wrapper')[0].innerHTML += '<div class="gallery__item scale-anm all ' + categories[loopIndex].catName + '"><img src="../assets/images/gallery/' + categories[loopIndex].catName + '/' + imgIndex + '.jpg" alt="" /></div>'
   }
 }
 
