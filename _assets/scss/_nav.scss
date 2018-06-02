@@ -1,0 +1,155 @@
+#homepage {
+  nav {
+    top: 25%;
+    border-top: 1px solid rgba(255,255,255,.5);
+    border-bottom: 1px solid rgba(255,255,255,.5);
+    background: linear-gradient(to left, transparent, rgba(255,255,255,.5), transparent);
+  }
+
+  #nav__logo {
+    height: 130px;
+  }
+}
+
+#nav__logo {
+  height: 70px;
+  left: 0px;
+  margin: 10px 20px;
+  width: auto;
+}
+
+nav {
+  align-items: center;
+  position: relative;
+  // height: 130px;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  margin: 0 auto;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  background: rgba(255,255,255,.9);
+  z-index: 10;
+
+  ul#homepage__nav {
+    display: flex;
+    position: absolute;
+    height: 80px;
+    top: 60px;
+  }
+}
+
+#homepage {
+  .icon {
+    background-image: url("../images/icons/settings.svg");
+    width: 60px;
+    height: 60px;
+
+    &:hover {
+      background-image: url("../images/icons/settings-orange.svg");
+    }
+
+    &::after {
+      color: white;
+      top: 105%;
+      font-size: 12.5px;
+    }
+  }
+
+  .icon--contact {
+    background-image: url("../images/icons/contact.svg");
+
+    &:hover {
+      background-image: url("../images/icons/contact-orange.svg");
+    }
+  }
+  .icon--gallery {
+    background-image: url("../images/icons/photo.svg");
+
+    &:hover {
+      background-image: url("../images/icons/photo-orange.svg");
+    }
+  }
+  .icon--presentation {
+    background-image: url("../images/icons/user.svg");
+
+    &:hover {
+      background-image: url("../images/icons/user-orange.svg");
+    }
+  }
+}
+
+.icon {
+  background-image: url("../images/icons/settings-orange.svg");
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  border: 2px solid #ff8900;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  transition: all .3s;
+  opacity: 1;
+  margin: 10px 20px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  &:hover {
+    cursor: pointer;
+    // background-color: white;
+
+    &::after {
+      opacity: 1;
+      transition: all .3s;
+    }
+  }
+
+  &::after {
+    opacity: 0;
+    transition: all .3s;
+    content: "services";
+    position: absolute;
+    top: 102%;
+    font-size: 10px;
+    font-family: "open sans";
+    text-transform: uppercase;
+    color: #5a6fb5;
+  }
+}
+
+.icon--contact {
+  background-image: url("../images/icons/contact-orange.svg");
+
+  &::after {
+    content: "contact";
+  }
+}
+
+.icon--gallery {
+  background-image: url("../images/icons/photo-orange.svg");
+
+  &::after {
+    content: "galerie"
+  }
+}
+
+.icon--presentation {
+  background-image: url("../images/icons/user-orange.svg");
+
+  &::after {
+    content: "présentation"
+  }
+}
+
+.icon--home {
+  background-image: url("../images/icons/logo-black.svg");
+  background-size: 90%;
+  border-color: #5a6fb5;
+
+  &::after {
+    content: "accueil"
+  }
+}

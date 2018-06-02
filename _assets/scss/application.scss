@@ -1,0 +1,23 @@
+/**
+ * Reset some basic elements
+ */
+html, body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:active,
+a:hover,
+a:link
+a:visited {
+  color: #404040;
+  text-decoration: none;
+}
+
+@import "_homepage";
+@import "_galerie";
+@import "_presentation";
+@import "_nav";

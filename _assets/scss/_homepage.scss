@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Brushsci';
+    src: url("../fonts/BRUSHSCI.ttf") format('truetype');
+}
+
+.homepage__title {
+  color: #ececec;
+  font-family: "Brushsci";
+  font-family: 'Open Sans', sans-serif;
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-style: italic;
+  text-transform: uppercase;
+  position: absolute;
+  top: -41px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+
+  span {
+    color: #ff8900;
+  }
+}
+
+#homepage {
+  align-items: center;
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: calc(100%);
+  overflow: hidden;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  flex-direction: column;
+  // margin-top: 50px;
+}
+
+.homepage__text-intro {
+  color: rgba(255,255,255,.9);
+  position: absolute;
+  left: 50px;
+  bottom: 60px;
+  font-family: cursive;
+  font-weight: 100;
+  font-size: 35px;
+  line-height: 40px;
+
+  span {
+    color: #ff8900;
+    font-family: "Brushsci";
+  }
+}

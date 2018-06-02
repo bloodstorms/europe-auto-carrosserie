@@ -1,0 +1,322 @@
+@charset "UTF-8";
+/**
+ * Reset some basic elements
+ */
+html, body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0; }
+
+a,
+a:active,
+a:hover,
+a:link
+a:visited {
+  color: #404040;
+  text-decoration: none; }
+
+@font-face {
+  font-family: 'Brushsci';
+  src: url("../fonts/BRUSHSCI.ttf") format("truetype"); }
+
+.homepage__title {
+  color: #ececec;
+  font-family: "Brushsci";
+  font-family: 'Open Sans', sans-serif;
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-style: italic;
+  text-transform: uppercase;
+  position: absolute;
+  top: -41px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2; }
+  .homepage__title span {
+    color: #ff8900; }
+
+#homepage {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(100%);
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.homepage__text-intro {
+  color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  left: 50px;
+  bottom: 60px;
+  font-family: cursive;
+  font-weight: 100;
+  font-size: 35px;
+  line-height: 40px; }
+  .homepage__text-intro span {
+    color: #ff8900;
+    font-family: "Brushsci"; }
+
+#body-gallery #signature {
+  color: #404040;
+  padding: 2px; }
+  #body-gallery #signature a {
+    color: #404040; }
+
+#gallery {
+  padding-top: 120px;
+  background: #f5f5f5; }
+
+.gallery__wrapper {
+  -webkit-column-count: 4;
+     -moz-column-count: 4;
+          column-count: 4;
+  -webkit-column-gap: 1rem;
+     -moz-column-gap: 1rem;
+          column-gap: 1rem;
+  margin: 1rem;
+  margin-bottom: 0; }
+  @media screen and (max-width: 768px) {
+    .gallery__wrapper {
+      -webkit-column-count: 2;
+         -moz-column-count: 2;
+              column-count: 2;
+      -webkit-column-gap: 0.5rem;
+         -moz-column-gap: 0.5rem;
+              column-gap: 0.5rem;
+      margin: 0.5rem;
+      margin-bottom: 0; } }
+
+.gallery__item {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease; }
+  .gallery__item:hover {
+    cursor: pointer; }
+
+.scale-anm {
+  -webkit-transform: scale(1);
+          transform: scale(1); }
+
+.gallery__item img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem; }
+  @media screen and (max-width: 768px) {
+    .gallery__item img {
+      margin-bottom: 0.5rem; } }
+
+.gallery__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 50px; }
+  @media screen and (max-width: 768px) {
+    .gallery__buttons {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      margin: 30px 0 20px 0; } }
+
+.gallery__button {
+  background: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: none;
+  cursor: pointer;
+  border: none;
+  -webkit-appearance: none;
+  color: #5a6fb5;
+  margin: 0 12px;
+  padding: 0 0 5px 0; }
+  @media screen and (max-width: 768px) {
+    .gallery__button {
+      font-size: 0.8rem;
+      margin: 0 10px;
+      margin-bottom: 10px; } }
+  .gallery__button.active {
+    border-bottom: 3px solid #ff8900; }
+
+.gallery__button:hover {
+  text-decoration: none; }
+
+.gallery__button:focus {
+  outline: none;
+  border-color: var(--darken-2);
+  box-shadow: 0 0 0 3px var(--darken-3); }
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.kpis-banner {
+  background-image: url("../images/car-banner.jpg");
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%; }
+
+#homepage nav {
+  top: 25%;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  background: -webkit-linear-gradient(right, transparent, rgba(255, 255, 255, 0.5), transparent);
+  background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.5), transparent); }
+
+#homepage #nav__logo {
+  height: 130px; }
+
+#nav__logo {
+  height: 70px;
+  left: 0px;
+  margin: 10px 20px;
+  width: auto; }
+
+nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  margin: 0 auto;
+  border-bottom: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 10; }
+  nav ul#homepage__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    height: 80px;
+    top: 60px; }
+
+#homepage .icon {
+  background-image: url("../images/icons/settings.svg");
+  width: 60px;
+  height: 60px; }
+  #homepage .icon:hover {
+    background-image: url("../images/icons/settings-orange.svg"); }
+  #homepage .icon::after {
+    color: white;
+    top: 105%;
+    font-size: 12.5px; }
+
+#homepage .icon--contact {
+  background-image: url("../images/icons/contact.svg"); }
+  #homepage .icon--contact:hover {
+    background-image: url("../images/icons/contact-orange.svg"); }
+
+#homepage .icon--gallery {
+  background-image: url("../images/icons/photo.svg"); }
+  #homepage .icon--gallery:hover {
+    background-image: url("../images/icons/photo-orange.svg"); }
+
+#homepage .icon--presentation {
+  background-image: url("../images/icons/user.svg"); }
+  #homepage .icon--presentation:hover {
+    background-image: url("../images/icons/user-orange.svg"); }
+
+.icon {
+  background-image: url("../images/icons/settings-orange.svg");
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  border: 2px solid #ff8900;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  opacity: 1;
+  margin: 10px 20px;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .icon:hover {
+    cursor: pointer; }
+    .icon:hover::after {
+      opacity: 1;
+      -webkit-transition: all .3s;
+      transition: all .3s; }
+  .icon::after {
+    opacity: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    content: "services";
+    position: absolute;
+    top: 102%;
+    font-size: 10px;
+    font-family: "open sans";
+    text-transform: uppercase;
+    color: #5a6fb5; }
+
+.icon--contact {
+  background-image: url("../images/icons/contact-orange.svg"); }
+  .icon--contact::after {
+    content: "contact"; }
+
+.icon--gallery {
+  background-image: url("../images/icons/photo-orange.svg"); }
+  .icon--gallery::after {
+    content: "galerie"; }
+
+.icon--presentation {
+  background-image: url("../images/icons/user-orange.svg"); }
+  .icon--presentation::after {
+    content: "présentation"; }
+
+.icon--home {
+  background-image: url("../images/icons/logo-black.svg");
+  background-size: 90%;
+  border-color: #5a6fb5; }
+  .icon--home::after {
+    content: "accueil"; }
