@@ -47,13 +47,16 @@
   position: absolute;
   left: 50px;
   bottom: 60px;
-  font-family: cursive;
+  font-family: 'kirnberg', cursive;
   font-weight: 100;
-  font-size: 35px;
-  line-height: 40px;
+  font-size: 75px;
+  line-height: 50px;
+  letter-spacing: 2px;
 
   span {
     color: #ff8900;
-    font-family: "Brushsci";
+    font-size: 35px;
+    font-family: "Brushsci", "blackjack", cursive;
+    letter-spacing: 0;
   }
 }

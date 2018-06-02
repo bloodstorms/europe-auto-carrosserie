@@ -3,6 +3,14 @@
   src: url("../fonts/BRUSHSCI.ttf") format("truetype"); }
 
 @font-face {
+  font-family: 'kirnberg';
+  src: url("../fonts/kirnberg.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'fertigo';
+  src: url("../fonts/fertigo.ttf") format("truetype"), url("../fonts/fertigo.woff") format("woff"), url("../fonts/fertigo.eot?#iefix") format("eot"); }
+
+@font-face {
   font-family: 'DymaxionScript';
   src: url("../fonts/DymaxionScript.ttf") format("truetype"), url("../fonts/DymaxionScript.woff") format("woff"); }
 
@@ -88,13 +96,16 @@ a:visited {
   position: absolute;
   left: 50px;
   bottom: 60px;
-  font-family: cursive;
+  font-family: 'kirnberg', cursive;
   font-weight: 100;
-  font-size: 35px;
-  line-height: 40px; }
+  font-size: 75px;
+  line-height: 50px;
+  letter-spacing: 2px; }
   .homepage__text-intro span {
     color: #ff8900;
-    font-family: "Brushsci"; }
+    font-size: 35px;
+    font-family: "Brushsci", "blackjack", cursive;
+    letter-spacing: 0; }
 
 #body-gallery #signature {
   color: #404040;

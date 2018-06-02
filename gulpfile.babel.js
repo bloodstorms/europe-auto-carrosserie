@@ -28,7 +28,7 @@ const globs = {
   ],
   stylesheets: './_assets/scss/**/*.scss',
   images: './_assets/images/**/*.{png,gif,jpg,jpeg,svg}',
-  fonts: './_assets/fonts/**/*.{eot,ttf,woff}',
+  fonts: './_assets/fonts/**/*.{eot,ttf,woff,otf}',
   svg: './_assets/svg/**/*.svg'
 }
 
