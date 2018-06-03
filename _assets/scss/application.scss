@@ -34,6 +34,14 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
 a,
 a:active,
 a:hover,
@@ -41,6 +49,20 @@ a:link
 a:visited {
   color: #404040;
   text-decoration: none;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=search] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border: 1px solid #ccc;
 }
 
 .centered-content {
@@ -59,8 +81,15 @@ a:visited {
   min-width: 100%;
 }
 
+//map
+.place-card.place-card-large {
+  display: none;
+}
+
 @import "_homepage";
-@import "_galerie";
 @import "_presentation";
+@import "_services";
+@import "_galerie";
+@import "_contact";
 @import "_nav";
 @import "_footer";
