@@ -1,8 +1,50 @@
 .kpis-banner {
-  background-image: url("../images/car-banner.jpg");
-  height: 500px;
+  background-image: url(../images/car-banner.jpg);
+  height: 520px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-y: 65%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top: 60px;
+}
+
+.kpis-banner__kpi-bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 3px solid rgba(255,255,255,.8);
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin: 50px;
+  flex-shrink: 0;
+  background-image: url("../images/cadran-trans.png");
+  background-size: contain;
+}
+
+.kpis-banner__kpi-number {
+  font-family: "Open Sans", sans-serif;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+}
+
+.kpis-banner__kpi-line {
+  border-bottom: 2px solid #ff8900;
+  margin: 15px;
+  width: 40px;
+}
+
+.kpis-banner__kpi-text {
+  color: rgba(255,255,255,.8);
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  height: 20px;
+  text-align: center;
+  margin-bottom: 10px;
 }
