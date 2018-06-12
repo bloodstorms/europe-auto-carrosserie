@@ -16,9 +16,27 @@
   justify-content: center;
   z-index: 2;
 
+  @include respond-to(phone) {
+    display: block;
+    font-size: 30px;
+    left: -30%;
+  }
+
   span {
     color: #ff8900;
     white-space: nowrap;
+
+    @include respond-to(phone) {
+      position: absolute;
+      left: -38%;
+    }
+  }
+
+  br {
+    display: none;
+    @include respond-to(phone) {
+      display: block;
+    }
   }
 }
 
@@ -39,6 +57,10 @@
 
   > .centered-content {
     top: 153px;
+
+    @include respond-to(phone) {
+      top: 100px;
+    }
   }
 }
 
@@ -47,17 +69,59 @@
   position: absolute;
   left: 50px;
   bottom: 60px;
-  font-family: 'kirnberg', cursive;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 100;
-  font-size: 75px;
-  line-height: 50px;
+  font-size: 30px;
+  line-height: 40px;
   letter-spacing: 2px;
+
+  @include respond-to(phone) {
+    font-size: 18px;
+    line-height: 25px;
+    left: 35px;
+    bottom: 50px;
+  }
+
+  @media screen and (max-width: 374px) {
+    font-size: 15px;
+    line-height: 25px;
+    left: 25px;
+    bottom: 30px;
+  }
 
   span {
     color: #ff8900;
-    font-size: 50px;
-    font-family: 'kirnberg', cursive;
+    font-size: 40px;
+    font-family: 'Brushsci', 'kirnberg', cursive;
     line-height: 50px;
     letter-spacing: 0;
+    margin-top: 5px;
+    display: block;
+
+    @include respond-to(phone) {
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    @media screen and (max-width: 374px) {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+}
+
+#logo__phone {
+  display: none;
+  width: 200px;
+  left: -50%;
+  position: relative;
+  top: 100px;
+
+  @include respond-to(phone) {
+    display: block;
+  }
+
+  @media screen and (max-width: 374px) {
+    width: 150px;
   }
 }

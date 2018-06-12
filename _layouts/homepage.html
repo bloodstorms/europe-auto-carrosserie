@@ -10,10 +10,14 @@
     <div id="homepage">
 
       <div class="centered-content">
-        <h1 class="homepage__title"><span>Europe Auto</span>&nbsp;Carrosserie</h1>
+        <h1 class="homepage__title"><span>Europe Auto</span><br>&nbsp;Carrosserie</h1>
       </div>
 
-      <nav>
+      <div class="centered-content">
+        <img id="logo__phone" src="{{ site.baseurl }}/assets/images/Logo-europ-auto-phare2.png">
+      </div>
+
+      <nav id="desktop-nav">
         <a href="{{ site.baseurl }}/presentation">
           <div class="icon icon--presentation">
             <div class="centered-content"><p>présentation</p></div>
@@ -37,6 +41,22 @@
             <div class="centered-content"><p>contact</p></div>
           </div>
         </a>
+      </nav>
+
+      <nav id="phone-nav">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="{{ site.baseurl }}/"><li>Accueil</li></a>
+            <a href="{{ site.baseurl }}/presentation"><li>Présentation</li></a>
+            <a href="{{ site.baseurl }}/services"><li>Services</li></a>
+            <a href="{{ site.baseurl }}/galerie"><li>Galerie</li></a>
+            <a href="{{ site.baseurl }}/contact"><li>Contact</li></a>
+          </ul>
+        </div>
       </nav>
 
       <h2 class="homepage__text-intro">Passion,<br>savoir-faire,<br>métier depuis plus de 30 ans...<br><span>By Bielli</span></h2>

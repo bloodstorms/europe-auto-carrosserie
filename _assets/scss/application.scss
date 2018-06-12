@@ -86,6 +86,8 @@ input[type=search] {
   display: none;
 }
 
+@import "_mixins";
+@import "_variables";
 @import "_homepage";
 @import "_presentation";
 @import "_services";

@@ -1,4 +1,4 @@
-<nav>
+<nav id="desktop-nav">
   <a href="{{ site.baseurl }}/">
     <div class="icon icon--home">
       <div class="centered-content"><p>Accueil</p></div>
@@ -24,4 +24,20 @@
       <div class="centered-content"><p>Contact</p></div>
     </div>
   </a>
+</nav>
+
+<nav id="phone-nav">
+  <div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <ul id="menu">
+      <a href="{{ site.baseurl }}/"><li>Accueil</li></a>
+      <a href="{{ site.baseurl }}/presentation"><li>Présentation</li></a>
+      <a href="{{ site.baseurl }}/services"><li>Services</li></a>
+      <a href="{{ site.baseurl }}/galerie"><li>Galerie</li></a>
+      <a href="{{ site.baseurl }}/contact"><li>Contact</li></a>
+    </ul>
+  </div>
 </nav>
