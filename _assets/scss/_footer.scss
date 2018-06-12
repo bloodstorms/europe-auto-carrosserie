@@ -6,6 +6,11 @@ footer {
   width: 100%;
   justify-content: center;
   position: relative;
+
+  @include respond-to(phone) {
+    flex-direction: column;
+    height: 170px;
+  }
 }
 
 .footer-link {
@@ -15,9 +20,16 @@ footer {
   width: 260px;
   justify-content: center;
 
+  @include respond-to(phone) {
+    width: auto;
+    justify-content: flex-start;
+    margin: 8px 20px;
+  }
+
   .fa {
     color: #a6a6a6;
     font-size: 20px;
+    width: 25px;
   }
 
   p {
