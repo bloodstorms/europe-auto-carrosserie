@@ -6,10 +6,18 @@
   height: calc(100% - 66px - 85px);
   width: 100%;
   padding-top: 66px;
+
+  @include respond-to(phone) {
+    height: calc(100% - 66px);
+  }
 }
 
 .mapouter {
   opacity: .5;
+
+  @include respond-to(phone) {
+    opacity: .8;
+  }
 }
 
 .block-form {
@@ -23,6 +31,14 @@
   background-color: #fafafa;
   box-shadow: 0 0 9px 0 rgba(0,0,0,.5);
   z-index: 10;
+
+  @include respond-to(phone) {
+    width: 95%;
+    left: 2.5%;
+    box-sizing: border-box;
+    top: auto;
+    bottom: 10px;
+  }
 }
 
 .block-form__title {
@@ -57,6 +73,10 @@
 
 .block-form__input--textarea {
   height: 100px;
+
+  @include respond-to(phone) {
+    height: 70px;
+  }
 }
 
 .block-form__button {

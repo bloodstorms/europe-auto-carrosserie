@@ -6,12 +6,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include respond-to(phone) {
+    height: 280px;
+  }
 }
 
 .body-services__titles {
   display: flex;
   flex-direction: column;
   z-index: 2;
+
+  @include respond-to(phone) {
+    max-width: 80%;
+  }
 }
 
 .body-services__title {
@@ -22,6 +30,13 @@
   font-weight: 400;
   padding-left: 30px;
   border-left: 3px solid #ff8900;
+
+  @include respond-to(phone) {
+    font-size: 40px;
+  }
+  @media screen and (max-width: 374px) {
+    font-size: 38px;
+  }
 }
 
 .body-services__subtitle {
@@ -34,16 +49,34 @@
   letter-spacing: 4px;
   text-transform: uppercase;
   padding-left: 33px;
+
+  @include respond-to(phone) {
+    font-size: 12px;
+  }
 }
 
 .block-service {
   display: flex;
+
+  @include respond-to(phone) {
+    flex-direction: column;
+  }
+}
+
+.block-service--reverse {
+  @include respond-to(phone) {
+    flex-direction: column-reverse;
+  }
 }
 
 .block-service__left,
 .block-service__right {
   width: 50%;
   box-sizing: border-box;
+
+  @include respond-to(phone) {
+    width: 100%;
+  }
 }
 
 .block-service__image {
@@ -60,6 +93,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  @include respond-to(phone) {
+    padding: 35px;
+  }
+}
+
+.block-service__left {
+  height: 400px;
 }
 
 .block-service__title {
@@ -89,4 +130,9 @@
   letter-spacing: 0px;
   text-align: center;
   max-width: 100%;
+
+  @include respond-to(phone) {
+    font-size: 16px;
+    text-align: justify;
+  }
 }

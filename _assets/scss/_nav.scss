@@ -48,7 +48,9 @@ nav#desktop-nav {
 }
 
 nav#phone-nav {
-
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 #homepage {
@@ -169,7 +171,7 @@ nav#phone-nav {
   left: 0;
   position: absolute;
   width: 100%;
-  z-index: 10;
+  z-index: 30;
 
   @include respond-to(phone) {
     display: block;
@@ -184,6 +186,7 @@ nav#phone-nav {
   z-index: 1;
   -webkit-user-select: none;
   user-select: none;
+  width: 35px;
 
   input {
     display: block;
@@ -251,11 +254,14 @@ nav#phone-nav {
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  box-shadow: 0 0 9px 0 rgba(0,0,0,.5);
 
   li {
-    padding: 10px 0;
+    margin: 10px 0;
+    padding-left: 10px;
     font-size: 18px;
     font-family: "Open Sans";
+    border-left: 2px solid #ff8900;
 
     &:focus,
     &:active {

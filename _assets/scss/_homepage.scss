@@ -18,8 +18,12 @@
 
   @include respond-to(phone) {
     display: block;
-    font-size: 30px;
+    font-size: 35px;
     left: -30%;
+  }
+
+  @media screen and (max-width: 374px) {
+    font-size: 30px;
   }
 
   span {
@@ -116,6 +120,7 @@
   left: -50%;
   position: relative;
   top: 20px;
+  margin: auto;
 
   @include respond-to(phone) {
     display: block;

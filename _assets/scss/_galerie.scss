@@ -1,10 +1,14 @@
 #body-gallery {
-  
+
 }
 
 #gallery {
   padding-top: 120px;
   background: #f5f5f5;
+
+  @include respond-to(phone) {
+    padding-top: 50px;
+  }
 }
 
 .gallery__wrapper {
