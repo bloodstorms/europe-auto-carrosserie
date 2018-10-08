@@ -63,6 +63,11 @@
   }
 }
 
+.block-service__intro {
+  background-color: #efefef;
+  padding: 50px 15%;
+}
+
 .block-service--reverse {
   @include respond-to(phone) {
     flex-direction: column-reverse;
@@ -88,7 +93,7 @@
 
 .block-service__right {
   padding: 50px;
-  min-height: 400px;
+  min-height: 480px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,7 +105,7 @@
 }
 
 .block-service__left {
-  height: 400px;
+  height: 480px;
 }
 
 .block-service__title {
@@ -129,6 +134,7 @@
   line-height: 1.4;
   letter-spacing: 0px;
   text-align: center;
+  margin: 8px 0;
   max-width: 100%;
 
   @include respond-to(phone) {
