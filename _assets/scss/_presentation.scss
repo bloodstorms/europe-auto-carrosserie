@@ -1,6 +1,6 @@
 .kpis-banner {
-  background-image: url(../images/car-banner.jpg);
-  height: 520px;
+  background-image: url(../images/background-pres.jpg);
+  height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 65%;
@@ -112,8 +112,10 @@
 .block-about__image {
   width: 100%;
   height: 100%;
+  background-size: cover;
   overflow: hidden;
   position: relative;
+  background-image: url(../images/img-pres-2.jpg);
 }
 
 .block-about__titles {
@@ -152,7 +154,7 @@
   font-style: normal;
   font-family: 'Lato', sans-serif;
   color: #001d70;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
   letter-spacing: 0px;
   padding-top: 10px;
@@ -221,6 +223,7 @@
 
 .block-team__person-blocks {
   display: flex;
+  width: 100%;
 
   @include respond-to(phone) {
     flex-direction: column;
@@ -228,54 +231,10 @@
 }
 
 .block-team__person-block {
-  width: 250px;
-  margin: 0 30px;
-
-  @include respond-to(tablet-landscape) {
-    width: 200px;
-    margin: 0 20px;
-  }
-  @include respond-to(phone) {
-    margin-bottom: 50px;
-  }
+  flex: 1;
+  margin: 0 10px;
 }
 
-.person-block__image {
+.block-team__person-img {
   width: 100%;
-  height: 250px;
-  overflow: hidden;
-  position: relative;
-}
-
-.person-block__name {
-  font-weight: 400;
-  font-style: normal;
-  font-family: 'Montserrat', sans-serif;
-  color: #001d70;
-  font-size: 18px;
-  line-height: 1.2;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-top: 20px;
-}
-
-.person-block__job {
-  font-weight: 400;
-  font-style: normal;
-  font-family: 'Montserrat', sans-serif;
-  color: #ff8900;
-  font-size: 14px;
-  line-height: 1.6;
-  letter-spacing: 0px;
-}
-
-.person-block__description {
-  font-weight: 400;
-  font-style: normal;
-  font-family: 'Lato', sans-serif;
-  color: #737373;
-  font-size: 14px;
-  line-height: 1.5;
-  letter-spacing: 0px;
-  margin-top: 10px;
 }

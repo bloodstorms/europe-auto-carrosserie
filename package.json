@@ -32,5 +32,9 @@
     "npm-run-all": "^4.0.2",
     "svgo": "^0.7.2",
     "vinyl-paths": "^2.1.0"
+  },
+  "resolutions": {
+    "graceful-fs": "4.2.3"
   }
+
 }
