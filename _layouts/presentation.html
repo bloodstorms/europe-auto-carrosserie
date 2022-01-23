@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html>
-
-  {% include head.html %}
-
-  {% include nav.html %}
+  {% include head.html %} {% include nav.html %}
 
   <body id="body-presentation">
-
     <div class="kpis-banner">
       <div class="kpis-banner__kpi-bubble">
         <p class="kpis-banner__kpi-number">30</p>
@@ -21,7 +17,7 @@
       <div class="kpis-banner__kpi-bubble">
         <p class="kpis-banner__kpi-number">295</p>
         <div class="kpis-banner__kpi-line"></div>
-        <p class="kpis-banner__kpi-text">Voitures réparées<br>chaque année</p>
+        <p class="kpis-banner__kpi-text">Voitures réparées<br />chaque année</p>
       </div>
     </div>
 
@@ -29,23 +25,42 @@
       <div class="block-about__left">
         <div class="block-about__titles">
           <h1 class="block-about__title">A propos</h1>
-          <h2 class="block-about__subtitle">L'histoire d'Europe Auto Carrosserie.</h2>
+          <h2 class="block-about__subtitle">
+            L'histoire d'Europe Auto Carrosserie.
+          </h2>
         </div>
         <p class="block-about__description">
-          Doté de plus de 30 années d’expérience dans un métier évolutif, Thierry BIELLI a su développer des compétences et une rare maitrise dans la restauration de véhicules.
+          Doté de plus de 30 années d’expérience dans un métier évolutif,
+          Thierry BIELLI a su développer des compétences et une rare maitrise
+          dans la restauration de véhicules.
+        </p>
+
         <p class="block-about__description">
-          Situé dans le département du var (83), Thierry BIELLI, tôlier formeur de métier, répare des véhicules d’exceptions et de légendes comme à l’identique.
+          Situé dans le département du var (83), Thierry BIELLI, tôlier formeur
+          de métier, répare des véhicules d’exceptions et de légendes comme à
+          l’identique.
         </p>
         <p class="block-about__description">
-          La carrosserie Europe Auto réalise des restaurations partielles ou complètes dans son atelier depuis 2001 et vous propose son savoir-faire traditionnel en matière de carrosserie et travaux de  peinture pour redonner le galbe et la forme d’origine à votre véhicule tout en respectant les normes constructeurs et les règles de l’art.
+          La carrosserie Europe Auto réalise des restaurations partielles ou
+          complètes dans son atelier depuis 2001 et vous propose son
+          savoir-faire traditionnel en matière de carrosserie et travaux de
+          peinture pour redonner le galbe et la forme d’origine à votre véhicule
+          tout en respectant les normes constructeurs et les règles de l’art.
         </p>
         <p class="block-about__description">
-          Aujourd’hui la carrosserie Europe Auto est spécialisée dans la réparation, la préparation et la restauration de véhicules de prestige, véhicules de sport, véhicules anciens et véhicules de collections toutes marques d’époques variées.
+          Aujourd’hui la carrosserie Europe Auto est spécialisée dans la
+          réparation, la préparation et la restauration de véhicules de
+          prestige, véhicules de sport, véhicules anciens et véhicules de
+          collections toutes marques d’époques variées.
         </p>
       </div>
       <div class="block-about__right">
         <div class="block-about__image">
-          <img class="centered-crop-image-soft" src="{{ site.baseurl }}/assets/images/img-pres-2.jpg" alt="carrossier">
+          <img
+            class="centered-crop-image-soft"
+            src="{{ site.baseurl }}/assets/images/img-pres-2.jpg"
+            alt="carrossier"
+          />
         </div>
       </div>
     </div>
@@ -54,23 +69,51 @@
       <div class="block-team__titles">
         <h2 class="block-team__title">Notre Équipe</h2>
         <div class="block-team__separator"></div>
-        <h3 class="block-team__subtitle">Notre équipe de professionnels expérimentés donnera une nouvelle vie<br>à votre voiture à tout moment.</h3>
+        <h3 class="block-team__subtitle">
+          Notre équipe de professionnels expérimentés donnera une nouvelle
+          vie<br />à votre voiture à tout moment.
+        </h3>
       </div>
       <div class="block-team__person-blocks">
         <div class="block-team__person-block">
-          <img class="block-team__person-img" src="{{ site.baseurl }}/assets/images/lustrage-2.jpg">
+          <img
+            class="block-team__person-img"
+            src="{{ site.baseurl }}/assets/images/bielli-thierry.jpg"
+            alt="Thierry Bielli"
+          />
+          <p class="block-team__person-name">Thierry Bielli</p>
+          <p class="block-team__person-job">Gérant/Responsable Atelier</p>
         </div>
         <div class="block-team__person-block">
-          <img class="block-team__person-img" src="{{ site.baseurl }}/assets/images/poncage-2.jpg">
+          <img
+            class="block-team__person-img"
+            src="{{ site.baseurl }}/assets/images/bielli-patricia.jpg"
+            alt="Patricia Bielli"
+          />
+          <p class="block-team__person-name">Patricia Bielli</p>
+          <p class="block-team__person-job">Responsable administratif</p>
         </div>
         <div class="block-team__person-block">
-          <img class="block-team__person-img" src="{{ site.baseurl }}/assets/images/peinture-1.jpg">
+          <img
+            class="block-team__person-img"
+            src="{{ site.baseurl }}/assets/images/bunel-estelle.jpg"
+            alt="Estelle Bunel"
+          />
+          <p class="block-team__person-name">Estelle Bunel</p>
+          <p class="block-team__person-job">Apprentie Carrossière</p>
+        </div>
+        <div class="block-team__person-block">
+          <img
+            class="block-team__person-img"
+            src="{{ site.baseurl }}/assets/images/levec-david.jpg"
+            alt="David Levec"
+          />
+          <p class="block-team__person-name">David Levec</p>
+          <p class="block-team__person-job">Carrossier-Peintre</p>
         </div>
       </div>
     </div>
 
     {% include footer.html %}
-
   </body>
-
 </html>

@@ -275,7 +275,7 @@ input[type=search] {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  font-family: 'Lato', sans-serif; }
+  font-family: "Lato", sans-serif; }
   @media screen and (max-width: 768px) {
     .block-about {
       -ms-flex-direction: column;
@@ -317,7 +317,7 @@ input[type=search] {
 .block-about__title {
   font-weight: 700;
   font-style: normal;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #001d70;
   font-size: 30px;
   line-height: 1.3;
@@ -327,7 +327,7 @@ input[type=search] {
 .block-about__subtitle {
   font-weight: 400;
   font-style: normal;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #868b97;
   font-size: 18px;
   line-height: 1.4;
@@ -339,7 +339,7 @@ input[type=search] {
 .block-about__description {
   font-weight: 400;
   font-style: normal;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #001d70;
   font-size: 16px;
   line-height: 1.4;
@@ -356,7 +356,7 @@ input[type=search] {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   text-align: center;
   -ms-flex-align: center;
       align-items: center;
@@ -377,7 +377,7 @@ input[type=search] {
 .block-team__title {
   font-weight: 700;
   font-style: normal;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #001d70;
   font-size: 30px;
   line-height: 1.3;
@@ -391,7 +391,7 @@ input[type=search] {
 .block-team__subtitle {
   font-weight: 400;
   font-style: normal;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #868b97;
   font-size: 18px;
   line-height: 1.4;
@@ -413,9 +413,26 @@ input[type=search] {
   -ms-flex: 1;
       flex: 1;
   margin: 0 10px; }
+  @media screen and (max-width: 768px) {
+    .block-team__person-block {
+      margin: 20px 0; } }
 
 .block-team__person-img {
   width: 100%; }
+
+.block-team__person-name {
+  font-size: 15px;
+  color: #0b1739; }
+  @media screen and (max-width: 768px) {
+    .block-team__person-name {
+      font-size: 18px; } }
+
+.block-team__person-job {
+  font-size: 13px;
+  color: #868b97; }
+  @media screen and (max-width: 768px) {
+    .block-team__person-job {
+      font-size: 15px; } }
 
 .body-services__image {
   position: relative;
